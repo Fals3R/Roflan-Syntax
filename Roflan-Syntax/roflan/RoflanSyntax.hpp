@@ -1,74 +1,75 @@
-// Just a very small set of roflan-defines
+п»ї// Just a very small set of roflan-defines
 // Created by Fals3R
 
 #pragma once
 
-#define абсолютный unsigned
-#define пустота void
-#define инт int
-#define дабл double
-#define флоат float
-#define лонг long
-#define текст std::string
-#define юникод std::wstring
+#define Р°Р±СЃРѕР»СЋС‚РЅС‹Р№ unsigned
+#define РїСѓСЃС‚РѕС‚Р° void
+#define РёРЅС‚ int
+#define РґР°Р±Р» double
+#define С„Р»РѕР°С‚ float
+#define Р»РѕРЅРі long
+#define С‚РµРєСЃС‚ std::string
+#define СЋРЅРёРєРѕРґ std::wstring
 
-#define начало {
-#define конец }
+#define РЅР°С‡Р°Р»Рѕ {
+#define РєРѕРЅРµС† }
 
-#define возвратить return
-#define истина true
-#define ложь false
+#define РІРѕР·РІСЂР°С‚РёС‚СЊ return
+#define РёСЃС‚РёРЅР° true
+#define Р»РѕР¶СЊ false
 
-#define публичный public
-#define приватный private
-#define защищённый protected
-#define статичный static
-#define внутренний inline
+#define РїСѓР±Р»РёС‡РЅС‹Р№ public
+#define РїСЂРёРІР°С‚РЅС‹Р№ private
+#define Р·Р°С‰РёС‰С‘РЅРЅС‹Р№ protected
+#define СЃС‚Р°С‚РёС‡РЅС‹Р№ static
+#define РІРЅСѓС‚СЂРµРЅРЅРёР№ inline
 
-#define если if
-#define иначе else
+#define РµСЃР»Рё if
+#define РёРЅР°С‡Рµ else
 
-#define для for
+#define РґР»СЏ for
+#define РїРѕРєР° while
 
-#define плюс +
-#define минус -
-#define умножить *
-#define делить /
-#define процент %
-#define равно =
-#define равного =
-#define прибавить +=
-#define отнять -=
-#define разделить_на /=
-#define умножить_на *=
-#define закончить ;
+#define РїР»СЋСЃ +
+#define РјРёРЅСѓСЃ -
+#define СѓРјРЅРѕР¶РёС‚СЊ *
+#define РґРµР»РёС‚СЊ /
+#define РїСЂРѕС†РµРЅС‚ %
+#define СЂР°РІРЅРѕ =
+#define СЂР°РІРЅРѕРіРѕ =
+#define РїСЂРёР±Р°РІРёС‚СЊ +=
+#define РѕС‚РЅСЏС‚СЊ -=
+#define СЂР°Р·РґРµР»РёС‚СЊ_РЅР° /=
+#define СѓРјРЅРѕР¶РёС‚СЊ_РЅР° *=
+#define Р·Р°РєРѕРЅС‡РёС‚СЊ ;
 
-#define выполнить(var) var;
+#define РІС‹РїРѕР»РЅРёС‚СЊ(var) var;
 
-#define язык(var) setlocale(LC_ALL, var);
+#define СЏР·С‹Рє(var) setlocale(LC_ALL, var);
 
-#define написать_в_консоль(...) printf(__VA_ARGS__);
+#define РЅР°РїРёСЃР°С‚СЊ_РІ_РєРѕРЅСЃРѕР»СЊ(...) printf(__VA_ARGS__);
 
-#define ждать(time) Sleep(time);
+#define Р¶РґР°С‚СЊ(time) Sleep(time);
 
-#define остаток(var, var2) var % var2
-#define чётное(var) var % 2 == 0
-#define возвести_в_степень(var, var2) pow(var, var2);
-#define модуль_числа(var) abs(var);
+#define РѕСЃС‚Р°С‚РѕРє(var, var2) var % var2
+#define С‡С‘С‚РЅРѕРµ(var) var % 2 == 0
+#define РІРѕР·РІРµСЃС‚Рё_РІ_СЃС‚РµРїРµРЅСЊ(var, var2) pow(var, var2);
+#define РјРѕРґСѓР»СЊ_С‡РёСЃР»Р°(var) abs(var);
 
-#define бип(freq, dur) Beep(freq, dur);
+#define Р±РёРї(freq, dur) Beep(freq, dur);
 
-#define установить_кодировку(var) SetConsoleCP(var);
-#define установить_кодировку_вывода(var) SetConsoleOutputCP(var);
+#define СѓСЃС‚Р°РЅРѕРІРёС‚СЊ_РєРѕРґРёСЂРѕРІРєСѓ(var) SetConsoleCP(var);
+#define СѓСЃС‚Р°РЅРѕРІРёС‚СЊ_РєРѕРґРёСЂРѕРІРєСѓ_РІС‹РІРѕРґР°(var) SetConsoleOutputCP(var);
 
-#define получить_текст_ввода_и_записать_в(var) std::getline(std::cin, var);
-#define получить_юникод_ввода_и_записать_в(var) std::getline(std::wcin, var);
+#define РїРѕР»СѓС‡РёС‚СЊ_С‚РµРєСЃС‚_РІРІРѕРґР°_Рё_Р·Р°РїРёСЃР°С‚СЊ_РІ(var) std::getline(std::cin, var);
+#define РїРѕР»СѓС‡РёС‚СЊ_СЋРЅРёРєРѕРґ_РІРІРѕРґР°_Рё_Р·Р°РїРёСЃР°С‚СЊ_РІ(var) std::getline(std::wcin, var);
 
-#define текст_пустой(var) var.length() < 1
-#define массив_символов(var) var.c_str()
-#define перевернуть_текст(var) std::reverse(var.begin(), var.end());
+#define С‚РµРєСЃС‚_РїСѓСЃС‚РѕР№(var) var.length() < 1
+#define РјР°СЃСЃРёРІ_СЃРёРјРІРѕР»РѕРІ(var) var.c_str()
+#define РїРµСЂРµРІРµСЂРЅСѓС‚СЊ_С‚РµРєСЃС‚(var) std::reverse(var.begin(), var.end());
 
-#define консоль(var) system(var);
-#define пауза консоль("pause")
+#define РєРѕРЅСЃРѕР»СЊ(var) system(var);
+#define РїР°СѓР·Р° РєРѕРЅСЃРѕР»СЊ("pause")
 
-#define выход exit(1);
+#define РІС‹С…РѕРґ exit(1);
