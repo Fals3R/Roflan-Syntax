@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="roflan">
+      <UniqueIdentifier>{4ddcd158-3ee8-4fd7-843e-bb6f21d870c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example">
+      <UniqueIdentifier>{2293525c-7734-4f02-ab3d-74de6892d81d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="roflan\RoflanSyntax.hpp">
+      <Filter>roflan</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="example\main.cpp">
+      <Filter>example</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
